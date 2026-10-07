@@ -37,7 +37,7 @@ export const Footer: React.FC<FooterProps> = ({ onRequestPilot, onOpenStorageInf
         {/* Top Grid */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start justify-between">
           {/* Brand & Description (clean wordmark, NO icon box) */}
-          <div className="md:col-span-5 space-y-4">
+          <div className="md:col-span-7 space-y-4">
             <a
               href="#home"
               onClick={(e) => handleLinkClick(e, '#home')}
@@ -68,7 +68,7 @@ export const Footer: React.FC<FooterProps> = ({ onRequestPilot, onOpenStorageInf
           </div>
 
           {/* Navigation Links */}
-          <div className="md:col-span-4 space-y-3">
+          <div className="md:col-span-5 space-y-3">
             <span className="text-xs font-bold uppercase tracking-wider text-slate-900 block font-mono">
               Website Navigation
             </span>
@@ -85,25 +85,6 @@ export const Footer: React.FC<FooterProps> = ({ onRequestPilot, onOpenStorageInf
                 </li>
               ))}
             </ul>
-          </div>
-
-          {/* Demonstration Notice & Privacy Info */}
-          <div className="md:col-span-3 space-y-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-slate-900 block font-mono">
-              Demonstration Notice
-            </span>
-            <p className="text-xs text-slate-500 leading-relaxed">
-              This interactive landing page is an informational frontend demonstration. Stored submissions remain local to your browser.
-            </p>
-            <div>
-              <button
-                type="button"
-                onClick={onOpenStorageInfo}
-                className="text-xs font-semibold text-teal-700 hover:text-teal-900 underline underline-offset-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-600 rounded"
-              >
-                Local Storage & Demonstration Notice
-              </button>
-            </div>
           </div>
         </div>
 
